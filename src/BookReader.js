@@ -750,13 +750,15 @@ BookReader.prototype.setupKeyListeners = function () {
         e.preventDefault();
         self.zoom(-1);
         break;
-        case '+':
-        case '=':
-        case 'Add':
-          e.preventDefault();
-          self.zoom(1);
-          break;
+      case '+':
+      case '=':
+      case 'Add':
+        e.preventDefault();
+        self.zoom(1);
+        break;
+      // Fullscreen
       case 'F':
+      case 'f':
         e.preventDefault();
         self.toggleFullscreen();
         break;
